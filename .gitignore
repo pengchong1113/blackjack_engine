@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Local environment and machine-specific files
+.env
+.python-version
+
+# Test and notebook caches
+.pytest_cache/
+.ipynb_checkpoints/
