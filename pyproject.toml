@@ -1,23 +1,28 @@
 [project]
 name = "blackjack-engine"
-version = "0.1.0"
+version = "0.1.1"
 description = "Blackjack engine for Group 4 course project"
 readme = "README.md"
 authors = [
-    { name = "pengchong", email = "leo.zhao@student.ie.edu" },
-    { name = "", email = "" },
-    { name = "", email = "" },
-    { name = "", email = "" },
-    { name = "", email = "" },
-    { name = "", email = "" }
+    { name = "Group 4 Team" }
 ]
 requires-python = ">=3.9"
+license = { text = "MIT" }
 dependencies = [
     "streamlit>=1.50.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/pengchongzhao1113/blackjack-engine"
+Homepage = "https://github.com/pengchong1113/blackjack_engine"
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+blackjack_engine = { path = "src/blackjack_engine" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [build-system]
 requires = ["uv_build>=0.9.22,<0.10.0"]
